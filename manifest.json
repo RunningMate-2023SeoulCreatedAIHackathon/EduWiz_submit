@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "Edu Wiz",
+    "version": "1.0",
+    "description": "Made by Running_Mate",
+    "permissions": [
+        "scripting",
+        "activeTab",
+        "storage",
+        "tabs"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "https://sdfedu.seoul.kr/*",
+        "http://localhost:5000/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://sdfedu.seoul.kr/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "content.css"
+            ]
+        }
+    ]
+}

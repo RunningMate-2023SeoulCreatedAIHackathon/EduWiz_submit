@@ -11,7 +11,7 @@ gpt_output_log_num = 1
 def chat_to_gpt(system_input, user_input, assistant_input, flag):
     global gpt_output_log_num
 
-    openai.api_key = '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'
+    openai.api_key = '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'
     messages = []
     if flag == 1:
         try: # 과거 대화내용 불러오기
